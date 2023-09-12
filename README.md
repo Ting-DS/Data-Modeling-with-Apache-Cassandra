@@ -5,19 +5,22 @@ Sparkify is a startup in the music streaming industry, aims to analyze the data 
 
 The objective of this project is to create an **Apache Cassandra NoSQL database** capable of answering queries about user activity data. The project will leverage data modeling with Apache Cassandra and complete an **ETL pipeline using Python driver**.
 
+## Why use NoSQL rather than a relational SQL database?
+Streaming data in a music app is often on a massive scale, reaching into the **terabytes** of data. Handling such large datasets becomes challenging when relying on a single machine due to the inherent scalability constraints of relational databases. Therefore, if your needs include **distributed** tables and **high-speed data retrieval** without the hindrance of ACID transactions or concerns about high availability, then NoSQL is the ideal choice. In our specific scenario, we've opted for Apache Cassandra as our AP fault-tolerant system, placing a premium on both availability and partition tolerance.
+
 ## File Overview
 
-- `event_data/` - contains our data for user sessions in the streaming app in csv format. files are partitioned by day. (e.g. `2018-11-02-events.csv`)
-- `images` - contains an image of what our data looks like after an ETL process
-- `data_modeling_with_cassandra.ipynb` - Has two parts:
-  - ETL pipeline for processing the event files and compiling them into a single csv with the desired columns
-  - Data modeling examples that show three queries and the creation of three tables to serve those queries
+- `event_data/` - contains 30-days web event data for user sessions in the streaming app in csv format. files are partitioned by day. (e.g. `2018-11-02-events.csv`)
+- <div align="center">
+  <img src="https://github.com/Ting-DS/Data-Modeling-with-Apache-Cassandra/blob/main/images/event_data_image.png" width="60%">
+</div>
+- `Apache_Cassandra_Sparkify.ipynb` - Has two parts:
+  - ETL pipeline for compiling the day-by-day event files into a single csv with the desired columns
+  - Data modeling with three queries using CQL and creates three tables to fit those queries.
 
 <div align="center">
   <img src="https://github.com/Ting-DS/Data-Modeling-with-Apache-Cassandra/blob/main/images/image_event_datafile_new.jpg" width="80%">
 </div>
 
 
-<div align="center">
-  <img src="https://github.com/Ting-DS/Data-Modeling-with-Apache-Cassandra/blob/main/images/event_data_image.png" width="80%">
-</div>
+
