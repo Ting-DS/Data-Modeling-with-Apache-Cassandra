@@ -14,10 +14,11 @@ Streaming data in a music app is often on a massive scale, reaching into the **t
 
 ## File Overview
 
-- `event_data/` - contains 30-days web event data for user sessions in the streaming app in csv format. files are partitioned by day. (e.g. `2018-11-02-events.csv`)
-- <div align="center">
+- `event_data/` - contains 30-days web event data for user sessions in the streaming app in csv format. files are partitioned by day.
+<div align="center">
   <img src="https://github.com/Ting-DS/Data-Modeling-with-Apache-Cassandra/blob/main/images/event_data_image.png" width="80%">
 </div>
+
 - `Apache_Cassandra_Sparkify.ipynb` - Has two parts:
   - ETL pipeline for compiling the day-by-day event files into a single csv with the desired columns
   - Data modeling with three queries using CQL and creates three tables to fit those queries.
@@ -26,5 +27,13 @@ Streaming data in a music app is often on a massive scale, reaching into the **t
   <img src="https://github.com/Ting-DS/Data-Modeling-with-Apache-Cassandra/blob/main/images/image_event_datafile_new.jpg" width="100%">
 </div>
 
+## Libraries 
+
+- **cassandra**
+- **cassandra.cluster**
+- **os**
+- **re**
+- **json**
+- **csv**
 
 
