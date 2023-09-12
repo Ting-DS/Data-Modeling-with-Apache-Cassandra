@@ -21,7 +21,7 @@ Streaming data in a music app is often on a massive scale, reaching into the **t
 
 - `Apache_Cassandra_Sparkify.ipynb`:
   - ETL pipeline for compiling the day-by-day event files into a single csv with the desired columns
-  - Data modeling with three queries using CQL and creates three tables to fit those queries.
+  - Data modeling with three queries using [CQL](https://cassandra.apache.org/doc/latest/cassandra/cql/) and creates three tables to fit those queries.
 
 <div align="center">
   <img src="https://github.com/Ting-DS/Data-Modeling-with-Apache-Cassandra/blob/main/images/image_event_datafile_new.jpg" width="100%">
