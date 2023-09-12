@@ -12,7 +12,7 @@ The objective of this project is to create an **[Apache Cassandra](http://cassan
 ## Why use NoSQL rather than a relational SQL database?
 Streaming data in a music app is often on a massive scale, reaching into the **terabytes** of data. Handling such large datasets becomes challenging when relying on a single machine due to the inherent scalability constraints of relational databases. Therefore, if your needs include **distributed** tables and **high-speed data retrieval** without the hindrance of ACID transactions or concerns about high availability, then NoSQL is the ideal choice. In our specific scenario, we've opted for Apache Cassandra as our AP fault-tolerant system, placing a premium on both availability and partition tolerance.
 
-## File Overview
+## File Overview & [CQL](https://cassandra.apache.org/doc/latest/cassandra/cql/) Process
 
 - `event_data/` - contains 30-days web event data for user sessions in the streaming app in csv format. files are partitioned by day.
 <div align="center">
@@ -21,7 +21,7 @@ Streaming data in a music app is often on a massive scale, reaching into the **t
 
 - `Apache_Cassandra_Sparkify.ipynb`:
   - ETL pipeline for compiling the day-by-day event files into a single csv with the desired columns
-  - Data modeling with three queries using [CQL](https://cassandra.apache.org/doc/latest/cassandra/cql/) and creates three tables to fit those queries.
+  - Data modeling with three queries using [CQL](https://cassandra.apache.org/doc/latest/cassandra/cql/) and creates 3 tables to fit those queries.
 
 <div align="center">
   <img src="https://github.com/Ting-DS/Data-Modeling-with-Apache-Cassandra/blob/main/images/image_event_datafile_new.jpg" width="100%">
