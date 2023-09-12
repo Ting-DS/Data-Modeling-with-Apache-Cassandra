@@ -3,7 +3,7 @@
 ## Project Description
 Sparkify is a startup in the music streaming industry, aims to analyze the data they have collected regarding songs and user activity on their new music streaming app. The data science team is particularly interested in understanding **what songs users are listening to**. Currently, they face difficulties in querying the data effectively since it is stored in a directory of CSV files, capturing user activity on the app.
 
-The objective of this project is to create an **Apache Cassandra NoSQL database** capable of answering queries about user activity data. The project will leverage data modeling with Apache Cassandra and complete an **ETL pipeline using Python driver**.
+The objective of this project is to create an **[Apache Cassandra](http://cassandra.apache.org/) NoSQL database** capable of answering queries about user activity data. The project will leverage data modeling with Apache Cassandra and complete an **ETL pipeline using Python driver**.
 
 - <div align="center">
   <img src="https://github.com/Ting-DS/Data-Modeling-with-Apache-Cassandra/blob/main/images/apache-cassandra-logo.png" width="100%">
