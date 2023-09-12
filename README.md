@@ -14,6 +14,6 @@ The objective of this project is to create an **Apache Cassandra NoSQL database*
   - Data modeling examples that show three queries and the creation of three tables to serve those queries
 
 <div align="center">
-  <img src="https://github.com/Ting-DS/Data-Modeling-with-Apache -Cassandra/blob/main/images/image_event_datafile_new.jpg" width="60%">
+  <img src="https://github.com/Ting-DS/Data-Modeling-with-Apache-Cassandra/blob/main/images/image_event_datafile_new.jpg" width="60%">
 </div>
 
